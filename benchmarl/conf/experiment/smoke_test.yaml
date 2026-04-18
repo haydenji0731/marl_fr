@@ -1,0 +1,10 @@
+defaults:
+  - base_experiment
+  - _self_
+
+max_n_frames: 100000
+loggers: [wandb]
+evaluation: true
+render: true
+parallel_collection: true
+on_policy_n_envs_per_worker: 8

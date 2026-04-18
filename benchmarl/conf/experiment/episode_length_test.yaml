@@ -1,0 +1,14 @@
+defaults:
+  - base_experiment
+  - _self_
+
+max_n_frames: 100000
+loggers: [wandb]
+wandb_extra_kwargs:
+  offline: true
+evaluation: true
+render: true
+evaluation_interval: 12000
+evaluation_episodes: 10
+parallel_collection: true
+on_policy_n_envs_per_worker: 8

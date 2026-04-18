@@ -1,0 +1,12 @@
+defaults:
+  - base_experiment
+  - _self_
+
+max_n_frames: 3000000
+loggers: [csv]
+evaluation: true
+render: false
+parallel_collection: true
+on_policy_n_envs_per_worker: 8
+evaluation_interval: 60000
+evaluation_episodes: 10
